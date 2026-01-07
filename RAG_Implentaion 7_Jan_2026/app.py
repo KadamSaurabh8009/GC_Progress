@@ -19,7 +19,7 @@ def main():
     create_collection(len(embeddings[0]))
     store_vectors(embeddings, chunks)
 
-    print("✅ Text + vectors stored successfully in Qdrant!")
+    print("Text and vectors stored successfully in Qdrant!")
 
 if __name__ == "__main__":
     main()
