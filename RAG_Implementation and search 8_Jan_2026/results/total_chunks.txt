@@ -1,0 +1,78 @@
+"chunks": [
+    {
+      "chunk_id": 0,
+      "text": "Basic Guide to Taxation & Tax Saving in India\n1. What is Taxation?\nTaxation is the process by which "
+    },
+    {
+      "chunk_id": 1,
+      "text": "he process by which the government collects money from individuals and organizations\nto fund public "
+    },
+    {
+      "chunk_id": 2,
+      "text": "ions\nto fund public services such as education, healthcare, infrastructure, and defense.\n2. Types of"
+    },
+    {
+      "chunk_id": 3,
+      "text": "defense.\n2. Types of Taxes in India\n1\nDirect Tax: Paid directly by individuals or companies (e.g., I"
+    },
+    {
+      "chunk_id": 4,
+      "text": "r companies (e.g., Income Tax).\n2\nIndirect Tax: Collected on goods and services (e.g., GST).\n3. Inco"
+    },
+    {
+      "chunk_id": 5,
+      "text": "(e.g., GST).\n3. Income Tax Slabs (Basic Overview)\nIncome tax is charged based on income slabs define"
+    },
+    {
+      "chunk_id": 6,
+      "text": " income slabs defined by the government. Different slabs apply for\nindividuals based on age and inco"
+    },
+    {
+      "chunk_id": 7,
+      "text": "ased on age and income level.\n4. Ways to Reduce Tax Legally\n1\nSection 80C: Investments in PPF, EPF, "
+    },
+    {
+      "chunk_id": 8,
+      "text": "tments in PPF, EPF, ELSS, LIC (up to ■1.5 lakh).\n2\nSection 80D: Health insurance premium deductions."
+    },
+    {
+      "chunk_id": 9,
+      "text": " premium deductions.\n3\nHome Loan Benefits: Deductions on principal and interest.\n4\nEducation Loan: I"
+    },
+    {
+      "chunk_id": 10,
+      "text": "\n4\nEducation Loan: Interest deduction under Section 80E.\n5\nDonations: Deductions under Section 80G.\n"
+    },
+    {
+      "chunk_id": 11,
+      "text": " under Section 80G.\n5. Government Tax Saving Schemes\n1\nPublic Provident Fund (PPF)\n2\nNational Pensio"
+    },
+    {
+      "chunk_id": 12,
+      "text": "F)\n2\nNational Pension Scheme (NPS)\n3\nSukanya Samriddhi Yojana\n4\nSenior Citizens Saving Scheme (SCSS)"
+    },
+    {
+      "chunk_id": 13,
+      "text": "Saving Scheme (SCSS)\n5\nAtal Pension Yojana\n6. Old Tax Regime vs New Tax Regime\nOld Tax Regime allows"
+    },
+    {
+      "chunk_id": 14,
+      "text": "ld Tax Regime allows deductions and exemptions, while the New Tax Regime offers lower tax\nrates but "
+    },
+    {
+      "chunk_id": 15,
+      "text": "lower tax\nrates but removes most deductions. Taxpayers can choose the regime that suits them best.\n7"
+    },
+    {
+      "chunk_id": 16,
+      "text": "t suits them best.\n7. Conclusion\nProper tax planning helps reduce tax burden legally and improves fi"
+    },
+    {
+      "chunk_id": 17,
+      "text": "ally and improves financial stability. Understanding\ntax laws and government schemes is essential fo"
+    },
+    {
+      "chunk_id": 18,
+      "text": "emes is essential for effective tax management.\n\n"
+    }
+]
