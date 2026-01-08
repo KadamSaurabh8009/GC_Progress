@@ -16,14 +16,14 @@ def main():
         print("❌ No text found in PDF")
         client.close()
         return
-    print("✅ PDF text loaded")
+    print("PDF text loaded")
 
     # 2. Chunk text
     chunks = chunk_text(text)
-    print(f"✅ Total chunks created: {len(chunks)}")
+    print(f"Total chunks created: {len(chunks)}")
 
     if not chunks:
-        print("❌ No chunks created")
+        print("No chunks created")
         client.close()
         return
 
@@ -31,12 +31,12 @@ def main():
     embeddings = []
     for chunk in chunks:
         embeddings.append(generate_embedding(chunk))
-    print("✅ Embeddings generated")
+    print("Embeddings generated")
 
     # 4. Store in Qdrant
     create_collection(len(embeddings[0]))
     store_vectors(embeddings, chunks)
-    print("✅ PDF data stored in Qdrant")
+    print("PDF data stored in Qdrant")
 
    # ---------- SEARCH ----------
     print("\n🔹 Starting similarity search")
@@ -44,7 +44,7 @@ def main():
     query = input("Enter your query: ").strip()
 
     if not query:
-        print("❌ Empty query entered. Please type a question.")
+        print("Empty query entered. Please type a question.")
         client.close()
         return
     
@@ -52,7 +52,7 @@ def main():
     print("\n🔍 Search Result (Top Match):")
    
     if result is None:
-        print("❌ No matching result found.")
+        print("No matching result found.")
     else:
         print("Similarity Score:", result["score"])
         print("Matched Text:", result["text"][:200])
@@ -60,7 +60,8 @@ def main():
 
     # ---------- CLEANUP ----------
     client.close()
-    print("\n✅ Qdrant client closed cleanly")
+    print("\n Qdrant client closed cleanly")
+
 
 
 if __name__ == "__main__":
