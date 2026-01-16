@@ -1,8 +1,8 @@
-🍽️ Multimodal AI Recipe Assistant
+**🍽️ Multimodal AI Recipe Assistant**
 
 An AI-powered Multimodal Recipe Recommendation System that suggests recipes based on text queries, filters, and food images using RAG (Retrieval-Augmented Generation), Qdrant Vector Database, and Gemini LLM & Vision models.
 
-Project Overview
+**Project Overview**
 
 The Multimodal Recipe Assistant helps users discover recipes by:
 
@@ -14,18 +14,18 @@ Uploading food images to identify dishes and get recipe suggestions
 
 The system uses semantic search + LLM reasoning to generate natural, human-like recipe explanations instead of raw database output.
 
-Key Features
+**Key Features**
 
-Natural language recipe search
-Image-based recipe understanding (Vision AI)
-Cuisine, cooking time, vegetarian filters
-Semantic vector search using Qdrant
-RAG-based response generation
-Clean Streamlit UI with filters sidebar
-FastAPI backend with modular architecture
-Pytest-based unit testing
+1. Natural language recipe search
+2. Image-based recipe understanding (Vision AI)
+3. Cuisine, cooking time, vegetarian filters
+4. Semantic vector search using Qdrant
+5. RAG-based response generation
+6. Clean Streamlit UI with filters sidebar
+7. FastAPI backend with modular architecture
+8. Pytest-based unit testing
 
-🧠 System Architecture
+**🧠 System Architecture**
 Streamlit (Frontend)
         |
 FastAPI (Backend API)
@@ -36,7 +36,7 @@ Retriever (Qdrant Vector Search)
         |
 Gemini LLM + Gemini Vision
 
-Tech Stack
+**Tech Stack**
 Frontend: Streamlit
 
 Backend:FastAPI and Python 3.11+
@@ -53,7 +53,7 @@ Testing
 Pytest
 
 
-Installation & Setup
+**Installation & Setup**
  Step 1: Clone Repository
 git clone https://github.com/<username>/multimodal-recipe-bot.git
 cd capstone_project
@@ -78,7 +78,7 @@ uvicorn app.main:app --reload
 cd frontend
 streamlit run streamlit_app.py
 
-API Endpoints
+**API Endpoints**
 🔹 Health Check
 GET /health
 
