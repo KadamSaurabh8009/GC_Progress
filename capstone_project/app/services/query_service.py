@@ -1,5 +1,5 @@
 from RAG.retriver.retriver import RecipeRetriever
-from app.services.llm_service import GeminiLLMService
+from app.services.llm_service import GroqLLMService  # ✅ changed
 from app.utils.utils import RAG_PROMPT
 
 
@@ -10,7 +10,7 @@ class QueryService:
 
     def __init__(self, top_k: int = 5):
         self.retriever = RecipeRetriever(top_k=top_k)
-        self.llm = GeminiLLMService()
+        self.llm = GroqLLMService()  # ✅ changed
 
     def _build_context(self, retrieved_docs: list) -> str:
         """
@@ -42,7 +42,6 @@ Recipe Details:
     ) -> str:
         """
         Main entry point used by API.
-        Currently filters are accepted but not applied yet.
         """
 
         # 1. Retrieve relevant recipes (semantic search)
@@ -51,7 +50,7 @@ Recipe Details:
             cuisine=cuisine,
             max_time=max_time,
             veg_only=veg_only,
-            )
+        )
 
         if not retrieved_docs:
             return "Sorry, I could not find any relevant recipes."
@@ -65,5 +64,8 @@ Recipe Details:
             context=context
         )
 
-        # 4. Generate answer using Gemini
-        return self.llm.generate(prompt)
+        # 4. Generate answer using Groq
+        return self.llm.generate(
+            prompt=prompt,
+            system_prompt="You are a helpful cooking assistant who suggests recipes clearly."
+        )

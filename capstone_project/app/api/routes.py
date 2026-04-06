@@ -1,16 +1,17 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, UploadFile, File
+from PIL import Image
+import io
+
 from app.schemas.request import RecipeQueryRequest
 from app.schemas.response import RecipeQueryResponse
 from app.services.query_service import QueryService
-from fastapi import UploadFile, File
-from PIL import Image
-from app.services.vision_service import GeminiVisionService
-import io
+from app.services.vision_service import VisionService  # ✅ correct
 
 
 router = APIRouter()
 
 query_service = QueryService(top_k=3)
+vision_service = VisionService()  # ✅ fixed
 
 
 @router.post("/query", response_model=RecipeQueryResponse)
@@ -24,13 +25,9 @@ def query_recipes(request: RecipeQueryRequest):
     return RecipeQueryResponse(answer=answer)
 
 
-
 @router.get("/health")
 def health_check():
     return {"status": "ok"}
-
-
-vision_service = GeminiVisionService()
 
 
 @router.post("/vision")
